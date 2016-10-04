@@ -49,9 +49,9 @@ submit.onclick = function() {
     }
     //Not done yet
   };
-  
   //Make the request
   request.open('GET','http://akshay-jain01.imad.hasura-app.io/submit-name?name=' + name,true)
   request.send(null);
-    
+   
+};   
 
