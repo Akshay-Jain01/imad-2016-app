@@ -4,6 +4,17 @@ body {
     margin-top: 60px;
 }
 
+
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+
 .center {
     text-align: center;
 }
