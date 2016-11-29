@@ -12,7 +12,7 @@ header, footer {
 }
 
 body{
-	background-image: url("img/home-bg.jpeg");
+	background-image: url("home-bg.jpeg");
 	background-repeat: no-repeat;
 }
 nav {
