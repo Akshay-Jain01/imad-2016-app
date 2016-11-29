@@ -5,12 +5,16 @@
 
 header, footer {
     padding: 1em;
-    color: white;
-    background-color: black;
+    color: green;
+    background-color: white;
     clear: left;
     text-align: center;
 }
 
+body{
+	background-image: url("img/home-bg.jpeg");
+	background-repeat: no-repeat;
+}
 nav {
     float: left;
     max-width: 160px;
