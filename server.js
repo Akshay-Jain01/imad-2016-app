@@ -63,10 +63,10 @@ app.get('/ui/profile.html', function (req, res) {
   res.sendFile('ui/profile.html' , { root : __dirname});
 });
 app.get('/ui/index.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile('ui/index.html' , { root : __dirname});
 });
 app.get('/ui/register.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'register.html'));
+  res.sendFile('ui/register.html' , { root : __dirname});
 });
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
