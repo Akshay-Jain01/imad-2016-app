@@ -60,8 +60,8 @@ function createTemplate(data) {
 }
 
 
-app.get('/profile', function (req, res) {
-  res.sendFile(path.join(__dirname+'ui/profile.html'));
+app.get('/:profile', function (req, res) {
+  res.sendFile(path.join(req.params.profile));
 });
 
 app.get('/ui/register.html', function (req, res) {
