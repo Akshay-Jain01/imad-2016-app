@@ -61,7 +61,7 @@ function createTemplate(data) {
 
 
 app.get('/profile', function (req, res) {
-  response.sendFile(__dirname+'/ui/profile.html');
+  res.sendFile(__dirname+'/ui/profile.html');
 });
 
 app.get('/ui/register.html', function (req, res) {
