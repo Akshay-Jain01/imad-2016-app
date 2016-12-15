@@ -59,7 +59,10 @@ function createTemplate(data) {
     return htmlTemplate;
 }
 
-app.get('/ui/profile.html', function (req, res) {
+app.use(express.static(__dirname + '/View'));
+app.use(express.static(__dirname + '/Script'));
+
+app.get('/profile', function (req, res) {
   res.sendFile('profile.html');
 });
 app.get('/ui/index.html', function (req, res) {
