@@ -14,7 +14,6 @@ var config = {
     password: process.env.DB_PASSWORD
     
 };
-app.use('/register.html',ui);
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
@@ -60,6 +59,9 @@ function createTemplate(data) {
     return htmlTemplate;
 }
 
+app.get('/ui/register.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'register.html'));
+});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
