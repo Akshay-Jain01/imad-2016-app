@@ -64,11 +64,11 @@ app.get('/profile', function (req, res) {
   res.sendFile(__dirname+'/ui/profile.html');
 });
 
-app.get('/ui/register.html', function (req, res) {
-  res.sendFile('ui/register.html' , { root : __dirname});
+app.get('/register', function (req, res) {
+  res.sendFile(__dirname+'/ui/register.html');
 });
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(__dirname+'/ui/index.html');
 });
 
 function hash(input,salt) {
