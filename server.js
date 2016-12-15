@@ -14,6 +14,7 @@ var config = {
     password: process.env.DB_PASSWORD
     
 };
+app.use('/register.html',ui);
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
