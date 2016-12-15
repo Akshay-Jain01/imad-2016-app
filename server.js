@@ -59,11 +59,9 @@ function createTemplate(data) {
     return htmlTemplate;
 }
 
-app.use(express.static(__dirname + '/View'));
-app.use(express.static(__dirname + '/Script'));
 
 app.get('/profile', function (req, res) {
-  res.sendFile('profile.html');
+  res.sendFile(path.join(__dirname+'/profile.html'));
 });
 app.get('/ui/index.html', function (req, res) {
   res.sendFile('ui/index.html' , { root : __dirname});
