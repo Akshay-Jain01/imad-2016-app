@@ -31,6 +31,6 @@ submit.onclick = function() {
   request.open('POST','http://akshay-jain01.imad.hasura-app.io/login',true);
   request.setRequestHeader('Content-Type','application/json');
   request.send(JSON.stringify({username: username, password: password}));
-  request.open('POST','http://akshay-jain01.imad.hasura-app.io/register.html',true);
+  request.open('GET','http://akshay-jain01.imad.hasura-app.io/register.html',true);
 };   
 
