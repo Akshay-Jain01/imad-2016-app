@@ -60,7 +60,7 @@ function createTemplate(data) {
 }
 
 app.get('/ui/profile.html', function (req, res) {
-  res.sendFile('ui/profile.html' , { root : __dirname});
+  res.sendFile('ui/profile.html');
 });
 app.get('/ui/index.html', function (req, res) {
   res.sendFile('ui/index.html' , { root : __dirname});
