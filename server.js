@@ -59,9 +59,7 @@ function createTemplate(data) {
     return htmlTemplate;
 }
 
-app.get('/login', function (req, res) {
-  res.sendFile(__dirname+'/ui/index.html');
-});
+
 app.get('/profile', function (req, res) {
   res.sendFile(__dirname+'/ui/profile.html');
 });
