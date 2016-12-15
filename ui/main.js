@@ -3,7 +3,7 @@
 //Submit username/password to login
 
 
-var submit = document.getElementById('submit_btn');
+var submit = document.getElementById('login_btn');
 submit.onclick = function() {
     //Make a request to the server and send the name
     var request = new XMLHttpRequest();
